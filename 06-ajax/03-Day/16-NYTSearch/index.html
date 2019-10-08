@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="jumbotron bg-dark text-white">
+  <div class="container">
+  <h1 class="display-4">New York Times Search<span id="time"></span></h1>
+  <img src="" alt="">
+  </div>
+</div>
+       
+<!-- Alex and Ana, below is the NEW "Search Parameters" and "Top Articles" bootstrap that we can start tweaking! -->
+<form>
+  <!-- CSS NOTE: assigned div ID "search-parameters" -->
+  <div class="card container-fluid" style="width: 18rem;">
+    <div class="card-header">
+    Search Parameters
+    </div>
+  <div id="search-parameters">
+    <!-- needs a blue background section with the "[icon]Search Parameters" here -->
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Search Term:</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>5</option>
+      <option>10</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Start Year (Optional):</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">End Year (Optional):</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+    <!-- CSS NOTE: assigned button ID "search-button" and "clear-button" -->
+    <button type="button" class="btn btn-secondary" id="search-button"><img src="Images/magnifyingglass.jpg" class="btnimg" alt="">Search</button> 
+    <!-- Do you know how to add the magnifying glass icon?? 
+    I added an image tage with a small picture. trying to make the size of the picture match the button-->
+    
+    <button type="button" class="btn btn-secondary" id="clear-button"><img src="Images/trash.jpg" class="btnimg" alt="">Clear</button>   
+    <!--gonna try  locally to make the magnifying glass// okay thank you!!-->
+
+  </div>
+  </div>
+</form>
+
+<!-- CSS NOTE: assigned div ID "top-articles" -->
+<div id="top-articles">
+  Needs styling
+</div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

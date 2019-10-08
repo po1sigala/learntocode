@@ -1,0 +1,39 @@
+.jumbotron {
+    background: rgb(64, 36, 189);
+    text-align: center;
+    box-shadow: 10px;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 30px;
+  }
+  body {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  /* below is copied over from that other VS share attempt!! - Kassi */
+  * {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #search-parameters {
+    width: 80%;
+    border: solid 2px;
+    padding: 3px;
+  }
+  
+  #top-articles {
+    background: rgb(64, 36, 189);
+    color: white;
+  }
+  
+  body {
+  }
+  .btnimg{
+      height: 20px;
+      widows: 20px;
+  }
+  .card-header{
+    background: rgb(64, 36, 189);
+  }

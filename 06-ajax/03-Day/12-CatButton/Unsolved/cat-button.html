@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Magical Cat Button</title>
+</head>
+
+<body>
+  <button id="cat-button">magical cat button</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    //
+    $("#cat-button").on("click", function() {
+
+      //
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
+
+      //
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      //using ajax to make a get request from the query url
+        .then(function(response) {
+          console.log(response);
+
+        //then using jquery to take the resoonse they gave us and do something with it
+          var imageUrl = response.data.image_original_url;
+
+          //creating a variable which will hold a certain link to what we want from the response
+          var catImage = $("<img>");
+
+          //creating a variable which is going to hold a dynamically created element
+          catImage.attr("src", imageUrl);
+          catImage.attr("alt", "cat image");
+
+          //firs we take our dynamically created element and then we change its attribut two ways. we give it
+          //a new image url and an alt title if it doesnt load
+          $("#images").prepend(catImage);
+        });//this says to take our newly created 
+    });
+  </script>
+</body>
+
+</html>

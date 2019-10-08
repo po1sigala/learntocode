@@ -1,0 +1,13 @@
+*{
+    font-family: 'Bree Serif', serif;
+}
+.jumbotron{
+    background: rgb(64, 36, 189);
+    color: whitesmoke;
+    text-align: center;
+    box-shadow: 10px;
+}
+body{
+    margin-right: 10%;
+    margin-left: 10%;
+}
